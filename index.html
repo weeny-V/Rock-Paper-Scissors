@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="main-header">Rock, Paper or Scissors...?</h1>
+  </header>
+  <main class="content">
+    <div class="container">
+      <div class="container--rules">
+        <h2 class="container--rules_topic">Rules:</h2>
+        <p><strong>Scissors</strong> beats a <strong>Paper</strong>, <strong>Paper</strong> beats <strong>Rock</strong>, 
+          <strong>Rock</strong> beats <strong>Scissors</strong>, and we play up to three wins! </p>
+      </div>
+      <h2 class="play">Let's play!</h2>
+      <ul class="container--buttons">
+        <li class="buttons-item">
+          <button class="rock">.Rock</button>
+        </li>
+        <li class="buttons-item">
+          <button class="paper">.Paper</button>
+        </li>
+        <li class="buttons-item">
+          <button class="scissors">.Scissors</button>
+        </li>
+        
+        <li class="button-item">
+          <a href="#" class="reset">.RESET</a>
+        </li>
+      </ul>
+    </div>
+    <div class="scoreboard">
+      <h2>Scoreboard</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td id="humanScore">0</td>
+            <td id="draw" class="draw">0</td>
+            <td id="computerScore">0</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>You</th>
+            <th class="draw">Draw</th>
+            <th>Bot</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div id="status"></div>
+  </main>
+  <script src="/dist/app.js"></script>
+</body>
+</html>
